@@ -5,7 +5,8 @@ pipeline {
     stages {
         stage('TestLibrary') {
             steps {
-                echo 'Call '
+                echo 'Call'
+                sayHello 'Dave'
             }
         }
 }
