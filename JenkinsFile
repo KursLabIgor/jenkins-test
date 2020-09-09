@@ -1,12 +1,13 @@
-@Library('demo-lib')_
+@Library('demo-lib') _
 pipeline {
     agent any
 
     stages {
         stage('TestLibrary') {
             steps {
-                echo 'Call'
-                utils.info 'Dave'
+                script { // necessary block for library methods in declarative
+                    utils.info "HAHA Blyat" // this invokes the method in the library
+                }
             }
         }
 }
