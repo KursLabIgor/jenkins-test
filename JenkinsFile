@@ -1,4 +1,4 @@
-@Library('demo-lib')_
+@Library('utils')_
 pipeline {
     agent any
 
